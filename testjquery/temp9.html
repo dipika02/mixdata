@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Appending content on my web site</title>
+	<style>
+		{ margin-top:0;}
+	</style>
+</head>
+<body>
+	<article>
+		<h1>my Awesome Post......</h1>
+		<div class=content>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odit magni, assumenda atque rem sunt tempore animi soluta fugiat sed provident, vel at suscipit error. Accusamus labore esse, quidem excepturi!
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus facilis vitae ad quo quam quibusdam, earum tempore quae inventore mollitia sed labore, laborum illum necessitatibus sequi maiores. Incidunt cum, quae.earum tempore quae inventore mollitia sed labore, laborum illum necessitatibus sequi maiores. Incidunt cum, quae.earum tempore quae inventore mollitia sed labore, labore
+			</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odit magni, assumenda atque rem sunt tempore animi soluta fugiat sed provident, vel at suscipit error. Accusamus labore esse, quidem excepturi!
+			</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odit magni, assumenda atque rem sunt tempore animi soluta fugiat sed provident, vel at suscipit error. Accusamus labore esse, quidem excepturi!
+			</p>
+		</div>
+	</article>
+	<script src="jquery.js"></script>
+	<script>
+	(function(){
+		var content=$('div.content').hide();
+		jQuery.fn.flash=function(speed,easing,callback){
+			var $this=$(this);
+			$(this).slideDown(2000,function(){
+			// console.log('hi there');
+			$this.delay(2000).slideUp(500)
+
+		});
+		};
+		$('h1').on('click',function(){
+			content.flash();
+		});
+	})();
+
+	</script>
+</body>
+</html>

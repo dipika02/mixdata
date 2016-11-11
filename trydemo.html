@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Scroll Horizontally</title>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<!-- <script type="text/javascript" src="js/jquery-1.3.1.min.js"></script> -->
+<script type="text/javascript" src="//code.jquery.com/jquery.scrollTo.js"></script>
+
+<style type="text/css">
+#wrapper {
+position: relative;
+width: 100%;
+overflow: scroll;
+}
+
+#fixeditem {
+position: absolute;
+}
+
+#contentwrapper {
+width: 100%;
+overflow: scroll;
+}
+
+#content {
+width: 1000px;
+height: 2000px;
+}
+</style>
+<script type="text/javascript">
+    $(window).scroll(function() { //OnScroll, invoke
+    if($(this).scrollTop() > 100) { 
+       //If the current scroll position is more than 100, add class
+        $( ".converter" ).addClass("fixed-pos");
+    } else {
+        //Else remove it
+        $( ".converter" ).removeClass("fixed-pos");
+    }
+});
+
+</script>
+
+
+</head>
+<body>
+<div id="wrapper">
+    <div id="fixeditem">
+        Haha, I am a header. Nah.. Nah na na na
+    </div>
+    <div id="contentwrapper">
+        <div id="content">
+            Lorem ipsum.....
+        </div>
+    </div>
+</div>
+</body>
+</html>

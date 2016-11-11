@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Appending content on my web site</title>
+	<style>
+		body{
+			margin: auto;
+			width:600px;
+			font-family: sans-serif;
+		}
+		#contact{
+			background: #e3e3e3;
+			padding: 1em 2em;
+			position: relative;
+		}
+		.js #contact{
+			position: absolute;
+			top:0;
+			width:inherit;
+			display: none;
+		}
+		#contact h2{margin.top:0;text-align: center;}
+		#contact li{padding:0;}
+		#contact ul{
+			list-style:none;
+			margin-bottom:1em;
+		}
+	</style>
+</head>
+<body>
+	<article>
+		<h1>my Awesome Post......</h1>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odit magni, assumenda atque rem sunt tempore animi soluta fugiat sed provident, vel at suscipit error. Accusamus labore esse, quidem excepturi!
+		</p>
+		<p>
+			<span class=co>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Temporibus facilis vitae ad quo quam quibusdam, earum tempore quae inventore mollitia sed labore, laborum illum necessitatibus sequi maiores. Incidunt cum, quae.earum tempore quae inventore mollitia sed labore, laborum illum necessitatibus sequi maiores. Incidunt cum, quae.earum tempore quae inventore mollitia sed labore, labore
+		</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odit magni,<span class=co>abcdefg fyukysk ufyuj ufu </span> assumenda atque rem sunt tempore animi soluta fugiat sed provident, vel at suscipit error. Accusamus labore esse, quidem excepturi!
+		</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odit magni, assumenda atque rem sunt tempore animi soluta fugiat sed provident, vel at suscipit error. Accusamus labore esse, quidem excepturi!
+		</p>
+
+	</article>
+	<div id="contact">
+		<h2>Contact Me</h2>
+		<div class="container">
+			<form action="#">
+				<div class="row">
+					<div class="col-sm-">
+						<ul>
+							<li>
+								<label for="name">Name:</label>
+								<input text="Name" id="name">
+							</li>
+							<li>
+								<label for="datetime">DateTime:</label>
+								<input text="datetime" id="name">
+							</li>
+
+							<li>
+								<label for="emailaddress">Email Address:</label>
+								<input text="emailaddress" id="emailaddress">
+							</li>
+							<li>
+								<label for="comment">What's Up?:</label>
+								<textarea name="comment" id="comment" cols="30" row="10" ></textarea>
+							</li>
+							<li>
+								<input type="submit" value="submit">
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="bower_components/jquery/dist/jquery.js"></script>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>To Do list</title>
+		<link rel="stylesheet" href="../static/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../static/bower_components/font-awesome/css/font-awesome.min.css">
+
+		<style>
+			.hand {
+				cursor: pointer;
+				cursor: hand;
+			}
+
+			.breathingRoom {
+				margin-top: 15px;
+			}
+
+			.formWindow {
+				border: 1px solid #fff;
+				border-radius: 10px;
+				padding: 5px 20px 20px 20px;
+				background: #fff;
+			}
+
+			.cover {
+				background: url(../static/img/2.jpg) no-repeat center center fixed;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+		</style>
+	</head>
+
+	<body class="cover"  id="loginMaster">
+
+		<nav class="navbar navbar-inverse" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">ToDo</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<!-- <li class="active"><a href="#">Link</a></li> -->
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="hand" v-link="{ path: '/login' }">Login</a></li>
+					<li><a class="hand" v-link="{ path: '/signup' }">SignUp</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</nav>
+
+ <!-- <a v-link="{ path: '/foo' }">Go to Foo</a>
+    <a v-link="{ path: '/bar' }">Go to Bar</a>
+  </p> -->
+  <!-- use router-view element as route outlet -->
+  <router-view></router-view>
+
+		<script src="../static/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../static/bower_components/vue/dist/vue.min.js"></script>
+		<script src="../static/bower_components/vue-resource/dist/vue-resource.min.js"></script>
+		<script src="../static/bower_components/vue-router/dist/vue-router.min.js"></script>
+		<script src="../static/js/login.js"></script>
+
+	</body>
+</html>

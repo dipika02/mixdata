@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+
+	<style>
+	li{color: black;}
+/*ul.emphasis li{
+
+}
+ul.emphasis >li{
+	/*color:red;*/
+/*}*/
+	</style>
+	<script >
+	$(document).ready(function(){
+	$('ul.emphasis').find('li:nth-child(3)').css('color','blue');
+	// $('ul:first-child').addClass('emphasis').children('li').css('color','green');
+	}); 
+	</script>
+</head>
+<body>
+		<ul class="emphasis">
+			<li>hello</li>
+			<li>hello1</li>
+			<li>hello2</li>
+			<li>hello3</li>
+			<li>
+				<!-- <ul>sorry dear</ul> -->
+				<ul>
+					<li>plz try next time</li>
+				</ul>
+			</li>
+
+		</ul>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Appending content on my web site</title>
+	<style>
+		article{
+			width:600px;
+			margin:auto;
+		}
+		blackquote.co{
+			float:right;
+			background: #e3e3e3;
+			font-size: 2em;
+			width: 35%;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<article>
+<h1>my Awesome Post......</h1>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odit magni, assumenda atque rem sunt tempore animi soluta fugiat sed provident, vel at suscipit error. Accusamus labore esse, quidem excepturi!
+	</p>
+	<p>
+		<span class=co>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Temporibus facilis vitae ad quo quam quibusdam, earum tempore quae inventore mollitia sed labore, laborum illum necessitatibus sequi maiores. Incidunt cum, quae.earum tempore quae inventore mollitia sed labore, laborum illum necessitatibus sequi maiores. Incidunt cum, quae.earum tempore quae inventore mollitia sed labore, labore
+	</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odit magni,<span class=co>abcdefg fyukysk ufyuj ufu </span> assumenda atque rem sunt tempore animi soluta fugiat sed provident, vel at suscipit error. Accusamus labore esse, quidem excepturi!
+	</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odit magni, assumenda atque rem sunt tempore animi soluta fugiat sed provident, vel at suscipit error. Accusamus labore esse, quidem excepturi!
+	</p>
+
+	</article>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script>
+		(function(){
+			// $('<h2></h2>',{
+			// 	text:'hello from the javaScript',
+			// 	class:'myClass'
+			// }).insertBefore('p:nth-child(3)');
+		// $('p').first().after( function(){
+		// 	return $(this).prev();
+		// } );
+		var co=$('span.co').each(function(){
+			var $this= $(this);
+			$('<blockquote></blockquote',{
+				class:'co',
+				text:$(this).text()
+			}).prependTo($this.closest('p'));
+			// $(this).closest('p').prepend('hi there')
+		})
+		})();
+		</script>
+</body>
+</html>

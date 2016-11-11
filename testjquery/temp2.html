@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title></title>
+
+</head>
+<style>
+	li{
+	color: black;
+}
+.emphasis{
+	color: green;
+}
+</style>
+
+<body>
+<div class="container" id="p1">
+	<h3>wellcome to the site</h3>
+	
+	<ul class="emphasis">
+		<li>Dipika</li>
+		<li>deepika</li>
+		<li>dipi</li>
+		<li>deepi</li>
+		<li>deep</li>
+		<li>
+			<ul>
+				<li>dip</li>
+			</ul>
+		</li>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	
+	<script>
+ 		// $('ul.emphasis').children('li').css('color','green');
+ 		// $('ul.emphasis').find('li:nth-child(1)').addClass('emphasis');
+ 		// $('ul.emphasis').children('li:first').addClass('emphasis');
+ 		$('ul.emphasis').children('li').first().addClass('emphasis');
+ 		// $('ul.emphasis').children('li:nth-child(2)').text('added with jquery');
+ 		// $('ul.emphasis').children('li').eq(2).next().text('added with jquery');
+ 		// $('ul.emphasis').children('li').eq(2).prev().text('added with jquery');
+ 		// $('ul.emphasis li:nth-child(3)').text('added with jquery');
+ 		//* $('li').parent();
+ 		// $('li').parent().removeclass('emphasis')
+ 		// $('li').parents('.container').removeclass('container')
+ 		console.log();
+
+	</script>
+	<style>
+/*li{
+	color: black;
+}
+.emphasis{
+	color: green;
+}*/
+
+/*.container{
+	color: green;
+}
+*/
+/*ul.emphasis >li{
+ 	color: red;
+ }
+*/
+</style>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>jQuery Events</title>
+	<link rel="stylesheet" href="day.css">
+
+</head>
+<body>
+	<h1>web site</h1>
+	
+	<button data-file="day" >Day</button>
+	<button data-file="night">Night</button>
+
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script>
+
+		// $('button').click(function(){
+		// 	console.log('button was click');
+		// 	$(this).text('change');
+		// });
+
+		(function(){
+			//var link=$('link');
+			$('button').click(function(){
+				// var $this=$(this)
+				// var stylesheet=$this.data('file')
+				// console.log(stylesheet);
+
+				// $(this).siblings('button').removeAttr('disabled','disabled');
+
+				// link.attr('href', stylesheet + '.css');
+				// $this.attr('disabled','disabled'); 
+				// $('link').attr('href', stylesheet + '.css'); 
+				// console.log($(this));
+				// $(this).text('changed');
+				// var stylesheet=$(this).attr('data-file');
+				// console.log(stylesheet);
+				 $('link').attr('href','night.css');
+			});
+		})();
+
+		</script>
+</body>
+</html> 

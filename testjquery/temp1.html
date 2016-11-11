@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title></title>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<style>
+		.emphasis { font-width:bold; }
+	</style>
+</head>
+<body>
+	<ul>
+		<li>hello</li>
+		<li>hello1</li>
+		<li>hello2</li>
+	</ul>
+
+	<script>
+		// $('ul li > a')
+		 $(function(){
+		 	$('li:first-child').addclass('emphasis');
+		 });
+		// $(document).ready(function){
+		// $('li:first-child').addClass('emphasis');
+		// });
+	</script>
+</body>
+</html>

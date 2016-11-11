@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Appending content on my web site</title>
+</head>
+<body>
+<article>
+<h1>my Awesome Post......</h1>
+<div class=content>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odit magni, assumenda atque rem sunt tempore animi soluta fugiat sed provident, vel at suscipit error. Accusamus labore esse, quidem excepturi!
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus facilis vitae ad quo quam quibusdam, earum tempore quae inventore mollitia sed labore, laborum illum necessitatibus sequi maiores. Incidunt cum, quae.earum tempore quae inventore mollitia sed labore, laborum illum necessitatibus sequi maiores. Incidunt cum, quae.earum tempore quae inventore mollitia sed labore, labore
+	</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odit magni, assumenda atque rem sunt tempore animi soluta fugiat sed provident, vel at suscipit error. Accusamus labore esse, quidem excepturi!
+	</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odit magni, assumenda atque rem sunt tempore animi soluta fugiat sed provident, vel at suscipit error. Accusamus labore esse, quidem excepturi!
+	</p>
+</div>
+	</article>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script>
+
+				$('div.content').hide();
+				// console.log($.fx.speeds);
+				$.fx.speeds.tortoise = 2000;
+				$('h1').on('click',function(){
+					$(this).next().slideDown('tortoise');
+				})
+
+
+		</script>
+</body>
+</html>

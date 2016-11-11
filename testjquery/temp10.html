@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.box{
+			width:400px;
+			background:pink;
+			padding: 2em;
+			position: relative;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h2>a legal info</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit quasi enim deserunt nam optio sequi quae soluta quisquam, ipsam, aliquam modi dolorem error, hic est totam amet nisi consectetur.
+		</p>
+	</div>
+	
+	<p><button>Increase</button></p>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script>
+(function(){
+
+		 var box= $('div.box');
+		 // fontSize= parseInt(box.css('font-size'),10);
+
+		 // console.log(fontSize + 5);
+
+		$('button').on('click', function(){
+			// box.animate({
+			// 	'fontSize':'+=5',
+			// 	'width':'+=300'
+			// },500,'swing',function(){
+			// 	console.log('completed');
+			// });
+		box
+			.animate({'font-size':'+=5'},
+				{duration:500})
+			.animate({'top':500},3000);
+		});
+	})();
+
+	</script>
+</body>
+ </html>

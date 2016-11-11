@@ -1,0 +1,16 @@
+{
+  "name": "chatdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express-session": "^1.14.0",
+    "hogan-express": "^0.5.2"
+  }
+}

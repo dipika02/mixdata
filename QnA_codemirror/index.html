@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my equation editor</title>
+</head>
+<body>
+
+<!-- yvyvy -->
+<div id="myEditor" style="border: 1px solid #DDDDDD;"></div> 
+<br>
+<button id="show">show equation</button>
+<br>
+<div id="preview" style="width: 100%; background-color: #F6F6F6; border 1px solid #EEE; padding: 20px; text-align: center;"></div>
+<br>
+<link rel="stylesheet" type="text/css" href="codemirror.css">
+<!-- <script type="text/javascript" async src="mathjax.min.js"></script> -->
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+<script type="text/javascript" src="codemirror.js"></script>
+<script type="text/javascript" src="tex_syntax_highlighting.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		var myCodeMirror = CodeMirror(document.getElementById("myEditor"));
+
+		console.log(myCodeMirror.getValue());
+		myCodeMirror.setValue("");
+		console.log(myCodeMirror.getValue());
+
+		$('#show').on('click', function(){
+			var equation = '\\[' + myCodeMirror.getValue() + '\\]';
+			console.log(equation);
+			$('#preview').text(equation);
+			var math = document.getElementById("preview");
+			MathJax.Hub.Queue(["Typeset",MathJax.Hub,math]);
+		});
+	</script>
+
+
+\[\frac{a}{n}\]
+</body>
+</html>
